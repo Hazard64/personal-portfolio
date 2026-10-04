@@ -1,120 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Personal Portfolio</title> </head>
-    <body>
-        <header>
-            <h1>Saiman Thapa - Personal Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="about">
-                <h2>About Me</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saiman Thapa Portfolio</title>
+    <link rel="stylesheet" href="./css/week 2.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h2>Saiman Thapa</h2>
+            </div>
+            <ul class="box">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
 
-                <img src="image.jpg" alt="Profile photograph of Saiman Thapa"
-                    width="250">
-
-                <p>
-                    I am a student interested in web development, programming,
-                    and
-                    information technology. I enjoy learning how websites are
-                    structured and developing practical digital projects. My
-                    goal
-                    is to continue improving my technical skills and create
-                    useful
-                    and accessible web applications.
+    <main>
+        <section id="about" class="block about-layout">
+            <div class="about-image">
+                <img src="image.jpg" alt="Profile Photograph of Saiman Thapa">
+            </div>
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p class="paragraph">
+                    I am a student interested in web development, programming, and information technology. 
+                    I enjoy learning how websites are structured and developing practical digital projects. 
+                    My goal is to continue improving my technical skills and create useful and accessible web applications.
                 </p>
-            </section>
-            <section id="skills">
-                <h2>Technical Skills</h2>
+            </div>
+        </section>
 
-                <dl>
-                    <dt>HTML5</dt>
-                    <dd>Creating structured and semantic web pages using
-                        HTML5.</dd>
+        <section id="skills" class="block">
+            <h1>Technical Skills</h1>
+            <div class="skills-container">
+                <div class="part_1">
+                    <h3>HTML5</h3>
+                    <p>Creating structured and semantic web pages using HTML5.</p>
+                </div>
+                <div class="part_1">
+                    <h3>Python</h3>
+                    <p>Writing basic programs and developing problem-solving skills.</p>
+                </div>
+                <div class="part_1">
+                    <h3>SQL</h3>
+                    <p>Working with databases and writing basic SQL queries.</p>
+                </div>
+                <div class="part_1">
+                    <h3>Git and GitHub</h3>
+                    <p>Managing source code and publishing projects using GitHub.</p>
+                </div>
+            </div>
+        </section>
 
-                    <dt>Python</dt>
-                    <dd>Writing basic programs and developing problem-solving
-                        skills.</dd>
-
-                    <dt>SQL</dt>
-                    <dd>Working with databases and writing basic SQL
-                        queries.</dd>
-
-                    <dt>Git and GitHub</dt>
-                    <dd>Managing source code and publishing projects using
-                        GitHub.</dd>
-                </dl>
-            </section>
-            <section id="projects">
-                <h2>Projects</h2>
-
-                <article>
+        <section id="projects" class="block">
+            <h1>Projects</h1>
+            <div class="products">
+                <div class="part_2">
                     <h3>Restaurant Website</h3>
+                    <p>A responsive restaurant website project containing information about the restaurant, menu items, services, and contact information.</p>
+                    <a href="#" class="btn1">View Restaurant Website Repository</a>
+                </div>
 
-                    <p>
-                        A responsive restaurant website project containing
-                        information about the restaurant, menu items, services,
-                        and contact information.
-                    </p>
-
-                    <p>
-                        <a
-                            href="https://github.com/Hazard64/nectar-restaurant.git">
-                            View Restaurant Website Repository
-                        </a>
-                    </p>
-                </article>
-                <article>
+                <div class="part_2">
                     <h3>Student Management System</h3>
+                    <p>A basic student management project designed to organize student information and demonstrate programming and database concepts.</p>
+                    <a href="#" class="btn1">View Student Management System Repository</a>
+                </div>
+            </div>
+        </section>
 
-                    <p>
-                        A basic student management project designed to organize
-                        student information and demonstrate programming and
-                        database concepts.
-                    </p>
-
-                    <p>
-                        <a
-                            href="https://github.com/Hazard64/personal-portfolio.git">
-                            View Student Management System Repository
-                        </a>
-                    </p>
-                </article>
-            </section>
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <form action="#" method="post">
-                    <p>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </p>
-                    <p>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </p>
-                    <p>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="6" cols="40"
-                            required></textarea>
-                    </p>
-                    <p>
-                        <button type="submit">Submit</button>
-                    </p>
+        <section id="contact" class="block">
+            <h1>Contact Me</h1>
+            <div class="contact">
+                <form action="#" method="POST">
+                    <p>Name:</p>
+                    <input type="text" name="name" required placeholder="Your Full Name">
+                    
+                    <p>Email:</p>
+                    <input type="email" name="email" required placeholder="name@example.com">
+                    
+                    <p>Message:</p>
+                    <textarea name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                    
+                    <div id="btncontainer">
+                        <button type="submit" id="btn1">Submit Message</button>
+                    </div>
                 </form>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2026 Saiman Thapa.</p>
-        </footer>
-    </body>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Saiman Thapa. </p>
+    </footer>
+
+</body>
 </html>
